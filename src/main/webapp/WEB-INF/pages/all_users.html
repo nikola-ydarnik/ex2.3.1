@@ -38,6 +38,7 @@
         <td th:text="${user.getAge()}">Age</td>
 
         <td class="operations">
+            &nbsp
             <a th:href="@{/edit(id=${user.getId()})}">
                 <button>Update</button>
             </a>
