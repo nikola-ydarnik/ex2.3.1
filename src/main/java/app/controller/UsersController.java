@@ -52,7 +52,7 @@ public class UsersController {
         model.addAttribute("user", userService.getUserById(id));
         return "user_edit";
     }
-
+//dao#updateUser - не должен принимать id. Id должен приходить внутри юзера с фронта.
     @PostMapping({"/update"})
     public String saveUpdateUser(@ModelAttribute("user") @Valid User user,
                                  BindingResult bindingResult) {
